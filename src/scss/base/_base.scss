@@ -1,0 +1,32 @@
+@use '../utils/stylesForwarded' as frwd;
+.page{
+    background-color: frwd.$backgroung;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap:50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page__title{
+  font-size: 124px;
+  color: frwd.$textColor;
+}
+
+.badge{
+    margin-right: 10px;
+    display: inline-block;
+    min-width: 200px;
+    border: solid 1px frwd.$textColor;
+    border-radius: 20px;
+    padding: 10px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.07px;
+    text-align: center;
+    color: frwd.$textColor;
+}
