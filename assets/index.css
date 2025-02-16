@@ -131,3 +131,61 @@ meter {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.page {
+  background-color: rgba(0, 0, 0, 0.88);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  height: 100vh;
+  gap: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.page__title {
+  font-size: 124px;
+  color: #fff;
+}
+
+.badge {
+  margin-right: 10px;
+  display: inline-block;
+  min-width: 200px;
+  border: solid 1px #fff;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.07px;
+  text-align: center;
+  color: #fff;
+}
+
+.badge--completed {
+  background-color: rgb(85, 17, 85);
+}
+
+.badge--ended {
+  background-color: red;
+}
+
+.badge--active {
+  margin-right: 0px;
+  background-color: green;
+}
